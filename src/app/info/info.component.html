@@ -1,0 +1,47 @@
+<div class="site-content myprofile">
+    <div class="container">
+
+            <div class="row">
+                    <div class="col-md-4 d-none d-md-block">
+                        <!-- My Account Nav -->
+                        <nav class="myaccount-nav">
+                            <a routerLinkActive="active"  routerLink="./myprofile" class="d-block selected">
+                                <h3 class="myaccount-nav-title">My Profile</h3>
+                                <span class="myaccount-nav-sub">Your Name and other details</span>
+                            </a>
+                            <a routerLink="./mycart" class="d-block">
+                                    <h3 class="myaccount-nav-title">My Cart</h3>
+                                    <span class="myaccount-nav-sub">Check Shipping Status, Re-Order Items</span>
+                                </a>
+                            <a routerLink="./myorders" class="d-block">
+                                <h3  class="myaccount-nav-title">View My Orders</h3>
+                                <span class="myaccount-nav-sub">Check Shipping Status, Re-Order Items</span>
+                            </a>
+                            <a routerLink="./mywishlist" class="d-block">
+                                <h3 class="myaccount-nav-title">My Wishlist</h3>
+                                <span class="myaccount-nav-sub">Add Item To Cart, Remove Items, Add Notes</span>
+                            </a>
+                            <a routerLink="./myaddresses" class="d-block">
+                                <h3 class="myaccount-nav-title">My Addresses</h3>
+                                <span class="myaccount-nav-sub">Add, Edit, Remove Addresses</span>
+                            </a>
+                            <a  class="d-block">
+                                <h3 class="myaccount-nav-title">Coupons</h3>
+                                <span class="myaccount-nav-sub">Manage coupons for additional discounts</span>
+                            </a>
+                        </nav>
+                    </div>
+                    <div  class="col-md-8">
+                      <router-outlet></router-outlet>
+                </div>
+            </div>
+    </div>
+    
+</div>
+
+ 
+  
+  
+  
+
+

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/">
+    <title>INFINIA</title>
+    
+</head>
+
+
+<body class="menu-overlay-off" >
+  <!--Header Start-->
+  <header class="site-header position-relative" id="site_header">
+    <div class="site-header-top-outer d-none d-md-block">
+        <div class="container">
+            <div class="site-header-top d-flex align-items-center justify-content-between">
+                <div class="site-header-top-left">
+                    <span>Need Help?</span><a href="mailto:" class="ml-1 font-weight-bold">contact@example.com</a>
+                </div>
+                <div class="site-header-top-right">
+                    <nav class="site-header-top-nav">
+                        <a routerLink="info" class="text-capitalize">Your Account</a>
+                        <a href="http://" class="text-capitalize">Today's Deals</a>
+                        <a href="http://" class="text-capitalize">Distributor's Login</a>
+                        <a routerLink="/signup" 
+                            class="text-capitalize">Register</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-header-body-outer">
+        <div class="container">
+            <div class="site-header-body d-flex align-items-center justify-content-between">
+                <div class="site-header-body-left d-none d-md-flex d-flex align-items-center">
+                    <a href="index.html" class="site-header-logo">
+                        <img src="assets/images/logo/logo.svg" alt="" class="desktop-logo d-none d-md-block">
+                        <img src="assets/images/logo/icon.svg" alt="" class="mobile-logo d-block d-md-none">
+                    </a>
+                    <nav class="site-header-nav d-none d-md-block">
+                        
+                        <a  routerLinkActive="active" routerLink="men" class="site-header-nav-link">Men</a>
+                        <a  routerLinkActive="active" routerLink="women" class="site-header-nav-link">Women</a>
+                        <a  class="site-header-nav-link">What's New</a>
+                        <a  class="site-header-nav-link">Collection</a>
+                    </nav>
+                </div>
+                <div class="site-header-body-right d-flex align-items-center text-right">
+                    <form class="site-header-searchbar align-items-center justify-content-between" action="">
+                        <input type="text" placeholder="Search">
+                        <button type="submit" class="d-flex align-items-center justify-content-center"><img
+                                src="assets/images/icons/search.png" alt="" class=""></button>
+                    </form>
+                    <a routerLink="info/myprofile" class="site-account-trigger d-none d-md-block position-relative">
+                        <img src="assets/images/icons/user.png" alt="" width="20">
+                    </a>
+                    <a routerLink="info/mywishlist" class="site-wishlist-trigger d-none d-md-block position-relative">
+                        <img src="assets/images/icons/wishlist.png" alt="" width="20">
+                        <span class="count">0</span>
+                    </a>
+                    <a routerLink="info/mycart"  class="site-cart-trigger d-none d-md-block position-relative">
+                        <img src="assets/images/icons/cart.png" alt="" width="20">
+                        <span class="count">0</span>
+                    </a>
+                </div>
+                <a href="javascript:void(0);" class="mobile-nav-hamberger d-block d-md-none position-absolute"><img src="assets/images/icons/menu.png" alt="" width="28"></a>
+                <a href="javascript:void(0);" class="mobile-nav-search d-block d-md-none position-absolute"><img src="assets/images/icons/search.png" alt="" width="20"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header End-->
+
+<!-- Mobile Navbar Start -->
+<nav class="mobile-nav d-flex flex-wrap d-md-none align-items-center justify-content-between">
+    <a routerLink="men" class="mobile-nav-link selected d-flex justify-content-center">
+        <i class="fi flaticon-web-page-home"></i>
+    </a>
+    <a routerLink="info/mywishlist" class="mobile-nav-link d-flex justify-content-center">
+        <i class="fi flaticon-heart position-relative"><span class="count">0</span></i>
+    </a>
+    <a routerLink="info/mycart" class="mobile-nav-link position-relative d-flex justify-content-center">
+        <i class="fi flaticon-online-shopping-cart position-relative"><span class="count">0</span></i>
+    </a>
+    <!-- Use has-notification class to show notification -->
+    <a href="#loginModal" data-toggle="modal" class="mobile-nav-link has-notification position-relative d-flex justify-content-center">
+        <i class="fi flaticon-user position-relative"><span class="notification"></span></i>
+    </a>
+</nav>
+<!-- Mobile Navbar End -->
+<router-outlet></router-outlet>
+ <!-- Footer Start -->
+ <footer class="footer position-relative">
+  <div class="container">
+      <div class="row justify-content-between d-none d-md-flex">
+          <div class="col-auto">
+              <h3 class="footer-title text-uppercase">Infinia</h3>
+              <ul class="footer-link-wrapper d-flex flex-column">
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">About Us</a></li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Contact Us</a>
+                  </li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Become An
+                          Affiliate</a></li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Feedback</a></li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Track Order /
+                          Return</a></li>
+              </ul>
+          </div>
+          <div class="col-auto">
+              <h3 class="footer-title text-uppercase">Policies</h3>
+              <ul class="footer-link-wrapper d-flex flex-column">
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Terms &
+                          Conditions</a></li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Privacy
+                          Policy</a></li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Cancellation
+                          Policy</a></li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Refund Policy</a>
+                  </li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Cookies</a></li>
+              </ul>
+          </div>
+          <div class="col-auto">
+              <h3 class="footer-title text-uppercase">Men</h3>
+              <ul class="footer-link-wrapper d-flex flex-column">
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Sweatshirts</a>
+                  </li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Hoodies</a></li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">T-shirts</a></li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Joggers</a></li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Track Pants</a>
+                  </li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Shorts</a></li>
+              </ul>
+          </div>
+          <div class="col-auto">
+              <h3 class="footer-title text-uppercase">Women</h3>
+              <ul class="footer-link-wrapper d-flex flex-column">
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Sweatshirts</a>
+                  </li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Hoodies</a></li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">T-shirts</a></li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Joggers</a></li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Track Pants</a>
+                  </li>
+                  <li class="footer-link-item"><a href="javascript:void(0);" class="footer-link">Shorts</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer-usp d-none d-md-block">
+          <div class="row align-items-center justify-content-around">
+              <div class="col-auto">
+                  <div class="footer-usp-item d-flex align-items-center">
+                      <div class="footer-usp-icon">
+                          <img src="assets/images/icons/usp1.png" alt="" width="32">
+                      </div>
+                      <div class="footer-usp-text">
+                          <h3 class="footer-usp-title">FREE DELIVERY</h3>
+                          <span>Free shipping worldwide</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-auto">
+                  <div class="footer-usp-item d-flex align-items-center">
+                      <div class="footer-usp-icon">
+                          <img src="assets/images/icons/usp2.png" alt="" width="32">
+                      </div>
+                      <div class="footer-usp-text">
+                          <h3 class="footer-usp-title">FREE DELIVERY</h3>
+                          <span>Free shipping worldwide</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-auto">
+                  <div class="footer-usp-item d-flex align-items-center">
+                      <div class="footer-usp-icon">
+                          <img src="assets/images/icons/usp3.png" alt="" width="32">
+                      </div>
+                      <div class="footer-usp-text">
+                          <h3 class="footer-usp-title">FREE DELIVERY</h3>
+                          <span>Free shipping worldwide</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-auto">
+                  <div class="footer-usp-item d-flex align-items-center">
+                      <div class="footer-usp-icon">
+                          <img src="assets/images/icons/usp4.png" alt="" width="32">
+                      </div>
+                      <div class="footer-usp-text">
+                          <h3 class="footer-usp-title">FREE DELIVERY</h3>
+                          <span>Free shipping worldwide</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom d-flex align-items-center justify-content-center justify-content-md-start">
+          <p class="copyright">Copyright &copy; 2019 <span class="text-uppercase"
+                  style="letter-spacing: 1px;">Infinia</span>. All Rights Reserved.</p>
+      </div>
+  </div>
+</footer>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
